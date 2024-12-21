@@ -5,7 +5,7 @@
 /* main */
 .main{
     min-height: 100vh;
-    background-image: url(../images/Background-Image.jpg);
+    background-image: url(../images/R.jpeg);
     background-size: 100% 100%;
 }
 /* navbar */
@@ -51,7 +51,7 @@
     height: 400PX;
 }
 .sec h1{
-    color: aliceblue;
+    /* color: aliceblue; */
     margin-bottom: 30px;
     font-size: 40px;
 }
@@ -77,7 +77,7 @@
 .mission{
     /* min-height: 100vh; */
     
-    background-image: url(../images/bg2.jpg);
+    background-image: url(../images/bg2...jpg);
     background-attachment: fixed;
     background-size: cover;
 }
