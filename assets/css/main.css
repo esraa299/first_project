@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* main */
+.main{
+    min-height: 100vh;
+    background-image: url(../images/Background-Image.jpg);
+    background-size: 100% 100%;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.navbar .logo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+}
+.navbar .bars{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar ul a{
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.navbar ul a:hover{
+    background-color: rgba(12, 40, 75, 0.804);
+}
+/* sec */
+.sec{
+    text-align: center;
+}
+.sec img{
+    width: 400PX;
+    height: 400PX;
+}
+.sec h1{
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.sec button{
+    font-size: 25px;
+    padding: 5px 30px;
+    border: 2px solid black;
+    border-radius:20px;
+    margin: 0px 8px;
+    transition: all 0.5s;
+}
+.sec button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.sec .btn1{
+    background-color: cornflowerblue;
+}
+.sec .btn2{
+    background-color: rgb(210, 100, 237);
+}
+/* mission */
+.mission{
+    /* min-height: 100vh; */
+    
+    background-image: url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.mission .layout{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 25px 0px;
+}
+.mission .layout h2{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 4px solid black;
+    border-top: 0px;
+    border-radius: 15px;
+}
+.mission .layout .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mission .layout .content :where(.image , .missions){
+    width: 50%;
+}
+.mission .layout .content .image{
+    text-align: center;
+}
+.mission .layout .content .image img{
+    width: 50%;
+}
+.mission .layout .content .missions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mission .layout .content .missions .card{
+    width: 40%;
+    margin-bottom: 25px;
+}
+/* media query */
+@media (max-width:992px) {
+    .mission .layout h2{
+        width: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar .bars{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .mission .layout .content :where(.image , .missions){
+        width: 100%;
+    }
+    .mission .layout .content .image{
+        margin-bottom: 20px;
+    }
+    .mission .layout .content .missions .card{
+        width: 30%;
+    }
+    .mission .layout .content .missions{
+        justify-content: space-around;
+    }
+    .mission .layout h2{
+        width: 40%;
+    }
+} 
+@media (max-width:576px){
+    .mission .layout .content .missions .card{
+        width: 80%;
+        text-align: center;
+    }
+    .mission .layout h2{
+        width: 50%;
+    }
+}
+@media (max-width:364px){
+    .sec button{
+        margin: 10px 8px;
+}}
+@media(max-width:400px){
+    .sec img{
+        width: 100%;
+    }
+}
